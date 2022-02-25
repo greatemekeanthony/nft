@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+:root {
+    --veryDarkBlueMB:hsl(217, 54%, 11%);
+    --softBlue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(216, 50%, 16%);
+    ---VerydarkblueLine:hsl(215, 32%, 27%);
+    --White:hsl(0, 0%, 100%);
+
+}
+
+
+
+body{
+    background-color: var(--veryDarkBlueMB);    
+    color: var(--White);
+}
+.section1{
+    background:var(--Verydarkblue);
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.body{
+    padding: 15px;
+}
+
+  .container > img{
+      position: relative;
+    width:100%;
+  
+    
+    border-radius: 30px;
+    position: relative;
+}
+
+.container :nth-child(1)::before{
+    position: absolute;
+    content: '';
+    background-color: red;
+    top: 0;
+     bottom: 0; 
+    left: 0;
+    right:0;
+    height: calc(100% -4px);
+    opacity: 0;
+
+
+  
+    
+}
+
+    
+
+
+.para{
+    margin: 15px;}
+
+.para>h3:hover{
+    color:cyan;
+    cursor: pointer;
+    transition: 4s;
+  
+}
+.lay{
+    display: flex;
+}
+
+.lay :nth-child(3){
+    
+    padding-left: 10rem;
+}
+.lay :nth-child(1){
+    padding-right: 5px;
+}
+.lay :nth-child(3){
+    padding-right: 5px;
+}
+.lay :nth-child(2){
+    color: var(--cyan);
+
+}
+.lay :nth-child(4){
+    color: var(---VerydarkblueLine);
+}
+.line{
+     padding-bottom: px;
+     border-bottom: solid var(---VerydarkblueLine) 1px; 
+    margin-left: 6%;
+    margin-right: 6%; 
+}
+/* color for the paragraph */
+.colllection{
+    color:var(---VerydarkblueLine) ;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.foot>h4:hover{
+    color: cyan;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.foot img{
+    width: 50px;
+    border-radius:50% ;
+    border: var(--White);
+    border: solid 1px;
+    
+}
+
+.lastdiv{
+    color: var(--softBlue);
+    
+}
+
+
+
+/* .line ::before{
+    content: "";
+    color: var(---VerydarkblueLine);
+    width: 100%;
+    height: 2rem;
+
+} */
+
